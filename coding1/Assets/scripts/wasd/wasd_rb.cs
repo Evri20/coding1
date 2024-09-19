@@ -10,7 +10,7 @@ public class wasd_rb : MonoBehaviour
     private Rigidbody2D rb;
 
     private Color defaultColor = Color.yellow;
-    public GameManager gameManager;
+    
     
     
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class wasd_rb : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         //find gameManager
-        gameManager = FindAnyObjectByType<GameManager>();
+       
     
     
     
@@ -70,7 +70,7 @@ public class wasd_rb : MonoBehaviour
             GetComponent<SpriteRenderer>().color = Color.green;
         }
         //score plus 1
-        gameManager.sc_num++;
+        
     }
 
     private void OnCollisionExit2D(Collision2D collision)
