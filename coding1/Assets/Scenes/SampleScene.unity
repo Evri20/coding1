@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 232122061}
   m_Layer: 0
   m_Name: player 3
-  m_TagString: Untagged
+  m_TagString: Player 3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -289,7 +289,7 @@ Transform:
   m_GameObject: {fileID: 232122060}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.7912601, y: 0.13112015, z: 0.0752325}
+  m_LocalPosition: {x: 8.61, y: -3.87, z: 0.0752325}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 411731800}
   - component: {fileID: 411731799}
   - component: {fileID: 411731798}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ground (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -528,7 +528,7 @@ GameObject:
   - component: {fileID: 675561974}
   - component: {fileID: 675561973}
   - component: {fileID: 675561975}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -677,6 +677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 1573416345}
+  sc_num: 0
 --- !u!4 &702167823
 Transform:
   m_ObjectHideFlags: 0
@@ -809,7 +810,7 @@ GameObject:
   - component: {fileID: 845441199}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -875,7 +876,7 @@ Transform:
   m_GameObject: {fileID: 845441194}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.0212603, y: -1.4588798, z: 0.0752325}
+  m_LocalPosition: {x: -0.23, y: -2.68, z: 0.0752325}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -933,7 +934,7 @@ BoxCollider2D:
     m_Bits: 4294967295
   m_ContactCaptureLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -966,6 +967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceAmt: 3
+  gameManager: {fileID: 0}
 --- !u!1 &1100214266
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,7 +979,7 @@ GameObject:
   - component: {fileID: 1100214269}
   - component: {fileID: 1100214268}
   - component: {fileID: 1100214267}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ground (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1378,7 +1380,7 @@ GameObject:
   - component: {fileID: 1869415337}
   - component: {fileID: 1869415336}
   - component: {fileID: 1869415335}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ground (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1512,7 +1514,7 @@ GameObject:
   - component: {fileID: 2140378423}
   m_Layer: 0
   m_Name: player 2
-  m_TagString: Untagged
+  m_TagString: Player 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1650,7 +1652,7 @@ Transform:
   m_GameObject: {fileID: 2140378418}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8887398, y: -1.3888798, z: 0.0752325}
+  m_LocalPosition: {x: -9.06, y: -3.89, z: 0.0752325}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
