@@ -8,12 +8,22 @@ public class wasd_rb : MonoBehaviour
     public float forceAmt = 10f;
     private int i = 8;
     private Rigidbody2D rb;
+
+    private Color defaultColor = Color.yellow;
+    public GameManager gameManager;
+    
     
     // Start is called before the first frame update
     void Start()
     {
         // Find the Rigidbody on the object this script is on 
         rb = GetComponent<Rigidbody2D>();
+
+        //find gameManager
+        gameManager = FindAnyObjectByType<GameManager>();
+    
+    
+    
     }
 
     // Update is called once per frame
@@ -59,9 +69,13 @@ public class wasd_rb : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().color = Color.green;
         }
-
+        //score plus 1
+        gameManager.sc_num++;
     }
 
-
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        GetComponent<SpriteRenderer>().color = defaultColor;
+    }
 
 }
