@@ -6,7 +6,7 @@ public class wasd_tran : MonoBehaviour
 {
     //variables
     public float speed = 3f;
-    
+    public GameObject pl2;
     
     // Start is called before the first frame update
     void Start()
@@ -47,4 +47,15 @@ public class wasd_tran : MonoBehaviour
 
         transform.position = pos;
     }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        var pos = new Vector2(Random.Range(-9, 8), Random.Range(-3, 4));
+        Instantiate(pl2, pos, Quaternion.identity);
+    }
+    // x(-9, - 8.6) y(3, - -3)
+
+
+
+
+
 }

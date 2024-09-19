@@ -1671,6 +1671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+  pl2: {fileID: 7667212894458754049, guid: 8239d9f6adaaf98408df0efc1a4ecb3b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
