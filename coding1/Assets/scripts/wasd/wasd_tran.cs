@@ -9,9 +9,11 @@ public class wasd_tran : MonoBehaviour
     public GameObject pl2;
     
     // Start is called before the first frame update
-    void Start()
+    
+    //awake happens before start
+    private void Awake()
     {
-        
+        pl2 = this.gameObject;
     }
 
     // Update is called once per frame
@@ -47,10 +49,13 @@ public class wasd_tran : MonoBehaviour
 
         transform.position = pos;
     }
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
+        //spawn pl2
         var pos = new Vector2(Random.Range(-9, 8), Random.Range(-3, 4));
         Instantiate(pl2, pos, Quaternion.identity);
+        //destroy player
+        Destroy(this.gameObject);
     }
     // x(-9, - 8.6) y(3, - -3)
 
