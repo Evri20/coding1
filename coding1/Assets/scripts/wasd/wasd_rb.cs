@@ -47,15 +47,18 @@ public class wasd_rb : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
        // make the cube change color when it hits player 2 cube
-       if (collision.transform.tag == "Player2")
+       if (collision.transform.tag == "Player 2")
         {
             GetComponent<SpriteRenderer>().color = Color.cyan;
 
         }
 
 
-
-
+       //make the cube change color when it hits player 3
+       if (collision.transform.tag == "Player 3")
+        {
+            GetComponent<SpriteRenderer>().color = Color.green;
+        }
 
     }
 
