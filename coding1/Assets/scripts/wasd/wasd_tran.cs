@@ -8,7 +8,7 @@ public class wasd_tran : MonoBehaviour
     public float speed = 3f;
     public GameObject pl2;
     private bool spawn = true;
-    public GameManager gameManager;
+    //public GameManager gameManager;
 
     
     
@@ -18,7 +18,7 @@ public class wasd_tran : MonoBehaviour
     private void Awake()
     {
         pl2 = this.gameObject;
-        gameManager = FindObjectOfType<GameManager>();
+        //gameManager = FindObjectOfType<GameManager>();
     
     }
 
@@ -69,10 +69,12 @@ public class wasd_tran : MonoBehaviour
             spawn = false;
             if(collision.transform.tag == "Player")
             {
-                gameManager.sc_num++;
+                //gameManager.sc_num++;
+                GameManager.instance.sc_num++;
             }else if (collision.transform.tag == "Player 3")
             {
-                gameManager.p3sc_num++;
+                //gameManager.p3sc_num++;
+                GameManager.instance.p3sc_num++;
             }
 
             //spawn pl2

@@ -7,12 +7,31 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     //variables 
+    //make it a simpleton
+    public static GameManager instance;
+    
+
+
     public TextMeshProUGUI score;
     public int sc_num;
     public TextMeshProUGUI p3score;
     public int p3sc_num;
 
-
+    //awake is called on spawn on this script
+    private void Awake()
+    {
+        //a singleton mst only have only one instance and check if there is only one instance
+        //if it is, make sure its not destroyed, if its not destroy this instance
+        if (instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
