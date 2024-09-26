@@ -70,7 +70,7 @@ public class wasd_rb : MonoBehaviour
             GetComponent<SpriteRenderer>().color = Color.green;
         }
         //score plus 1
-        
+        GameManager.instance.StartGame();
     }
 
     private void OnCollisionExit2D(Collision2D collision)

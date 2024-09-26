@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     //variables 
     //make it a simpleton
     public static GameManager instance;
-    
 
+    private bool starting = true;
 
     public TextMeshProUGUI score;
     public int sc_num;
@@ -53,4 +54,18 @@ public class GameManager : MonoBehaviour
         score.text = "Score: " + sc_num;
         p3score.text = "Score: " + p3sc_num;
     }
+
+    public void StartGame()
+    {
+       
+        if (starting)
+        {
+            SceneManager.LoadScene("GameScene");
+            starting = false;
+        }
+    }
+
+
+
 }
+
